@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Coil · ASCII Dreamlands</title>
+  <meta name="description" content="An ASCII Lovecraftian exploration RPG prototype. Wake on the Shore of Lost Hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Game world"></canvas>
+
+  <div id="hud">
+    <div id="party" class="panel">
+      <div class="portrait-wrap"></div>
+      <div class="party-info">
+        <div class="party-name"><span>THE DREAMER</span><span class="lv">LV 1</span></div>
+        <div class="bar hp"><span class="bar-k">HP</span><div class="track"><div class="fill"></div></div><span class="val">120/120</span></div>
+        <div class="bar mp"><span class="bar-k">MP</span><div class="track"><div class="fill"></div></div><span class="val">40/40</span></div>
+        <div class="bar luc"><span class="bar-k">LU</span><div class="track"><div class="fill"></div></div><span class="val">100/100</span></div>
+      </div>
+    </div>
+
+    <div id="mini">
+      <canvas id="minimap" aria-label="Minimap"></canvas>
+      <div id="mini-region"></div>
+      <div id="perf"></div>
+    </div>
+
+    <div id="hotbar"></div>
+
+    <div id="hints">
+      <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move</span>
+      <span><kbd>SPACE</kbd> dash</span>
+      <span><kbd>E</kbd> inventory</span>
+      <span><kbd>`</kbd> perf</span>
+    </div>
+
+    <div id="region-toast"><div class="rt-tier"></div><div class="rt-name"></div><div class="rt-line"></div></div>
+    <div id="discover-toast"></div>
+  </div>
+
+  <div id="inventory" aria-hidden="true"></div>
+
+  <div id="loading">
+    <div class="ld-title">THE COIL</div>
+    <div class="ld-sub">falling asleep…</div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "the-coil",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The Coil: an ASCII Lovecraftian exploration RPG prototype that runs in the browser.",
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes http-server . -p 8080 -c-1",
+    "serve:py": "python3 -m http.server 8080"
+  }
+}
